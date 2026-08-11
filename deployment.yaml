@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: devops-service-container
-        image: nguyenvanhai2005/devops-service:c08fc23
+        image: nguyenvanhai2005/devops-service:c08fc63
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
