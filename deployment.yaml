@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devops-service
+  template:
+    metadata:
+      labels:
+        app: devops-service
+    spec:
+      containers:
+      - name: devops-service-container
+        image: nguyenvanhai2005/devops-service:latest
+        ports:
+        - containerPort: 8080
